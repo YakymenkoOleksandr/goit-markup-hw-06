@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 ul,
 ol {
     padding-left: 0;
@@ -197,7 +201,7 @@ img {
 }
 
 .three_line {
-    display: none;
+    visibility: hidden;
 }
 
 
@@ -1053,8 +1057,10 @@ img {
 
     /*Навігація.  Лого-посилання*/
 
+
     .headerblock .container {
         display: flex;
+        width: 100%;
     }
 
     .addresstabl {
@@ -1196,7 +1202,6 @@ img {
     }
 
     .headerblock .container {
-        width: 1158px;
         margin: 0 auto;
         padding: 0 15px 0 15px;
         align-items: center;
@@ -1213,9 +1218,9 @@ img {
         gap: 40px;
     }
 
-    .menu_hamburher {
-        display: inline-block;
-    }
+        .three_line {
+            visibility: visible;
+        }
 
 
     /*Секція 1*/
@@ -2249,7 +2254,7 @@ img {
         color: #404bbf;
     }
 
-    .address {}
+    
 
     .headerblock {
         border-bottom: 1px solid #e7e9fc;
@@ -2274,11 +2279,6 @@ img {
         flex-wrap: wrap;
         flex-direction: column;
     }
-
-    .menu_hamburher {
-        display: inline-block;
-    }
-
 
     /*Секція 1*/
 
