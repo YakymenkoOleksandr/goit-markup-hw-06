@@ -2258,7 +2258,7 @@ img {
     }
 
     .headerblock .container {
-        width: 1158px;
+        width: 100%;
         align-items: center;
         justify-content: center;
     }
@@ -2266,12 +2266,13 @@ img {
     .headerblockcontainernav {
         display: flex;
         align-items: center;
+        margin-right: 121px;
     }
 
     .addresstabl {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .menu_hamburher {
