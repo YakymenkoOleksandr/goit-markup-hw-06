@@ -53,7 +53,7 @@ div {
 
 img {
     display: block;
-    max-width: 100%;
+    background-size: cover;
 }
 
 
@@ -1199,7 +1199,14 @@ img {
     /*Секція 1*/
 
     .sectionone {
-        min-width: 320px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/images_for_mobile/backgroundx1.jpg');
+        background-size: cover;
+    }
+
+    @media (min-resolution: 192dpi) {
+        .box {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/images_for_mobile/backgrounf@2x.jpg');
+        }
     }
 
     .sectionone .container {
@@ -1320,6 +1327,7 @@ img {
         line-height: 1.11;
         letter-spacing: 0.02em;
         margin: auto;
+        margin-bottom: 72px;
     }
 
     .sectionfourul {
@@ -1551,6 +1559,17 @@ img {
     .sectionone {
         min-width: 769px;
         max-width: 1158px;
+
+        .sectionone {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/images_for_tablet/backgroundx1.jpg');
+                background-size: cover;
+            }
+        
+            @media (min-resolution: 192dpi) {
+                .box {
+                    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/images_for_tablet/backgrounf@2x.jpg');
+                }
+            }
     }
 
     .textheader {
@@ -1673,6 +1692,7 @@ img {
         line-height: 1.11;
         letter-spacing: 0.02em;
         margin: auto;
+        margin-bottom: 72px;
     }
 
     .sectionfourul {
@@ -1784,4 +1804,7 @@ img {
         .modal_form_for_menu_hamburher {
             visibility: hidden;
         }
+
+        /*  */
+
 }
