@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Macondo&family=Raleway:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,100;0,400;0,700;1,700&display=swap"
       rel="stylesheet"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
@@ -161,6 +162,10 @@
           <ul class="ourteam">
             <li class="frame">
               <img
+                srcset="
+                  ./images/images_for_mobile/markguererrox1.jpg  1x,
+                  ./images/images_for_mobile/markguererro@2x.jpg 2x
+                "
                 src="./images/person0.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -205,6 +210,10 @@
 
             <li class="frame">
               <img
+                srcset="
+                  ./images/images_for_mobile/tomfordx1.jpg  1x,
+                  ./images/images_for_mobile/tomford@2x.jpg 2x
+                "
                 src="./images/person1.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -248,6 +257,10 @@
 
             <li class="frame">
               <img
+                srcset="
+                  ./images/images_for_mobile/camilagarsiax1.jpg  1x,
+                  ./images/images_for_mobile/camilagarsia@2x.jpg 2x
+                "
                 src="./images/person2.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -291,6 +304,10 @@
 
             <li class="frame">
               <img
+                srcset="
+                  ./images/images_for_mobile/danielwilsonx1.jpg  1x,
+                  ./images/images_for_mobile/danielwilson@2x.jpg 2x
+                "
                 src="./images/person3.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -341,12 +358,37 @@
           <ul class="sectionfourul">
             <li class="sectionfourli">
               <div class="imageapp">
-                <img
-                  src="./images/bankingapp.jpg"
-                  alt="Banking App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/images_for_mobile/bankingappx1.jpg  1x,
+                      ./images/images_for_mobile/bankingapp@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/images_for_tablet/bankingappx1.jpg  1x,
+                      ./images/images_for_tablet/bankingapp@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/images_for_pc/bankingappx1.jpg 1x,
+                      ./images/images_for_pc/bankingapp@2x    2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <!--
+                  <img
+                    src="./images/bankingapp.jpg"
+                    alt="Banking App"
+                    width="360"
+                    height="300"
+                  />
+                  -->
+                </picture>
                 <p class="hovertext">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -636,5 +678,78 @@
         </form>
       </div>
     </div>
-  --></body>
+  -->
+    <!--Модальна форма для меню гамбургера-->
+    <!--
+    <div class="modal_form_for_menu_hamburher">
+      <div class="freame_modal_form_for_menu_hamburher">
+        <div class="close_button_for_modal_form">
+          <svg width="8" height="8" class="cross_icon_for_modal_form">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </div>
+        <nav class="headerblockcontainernav_for_modal_window">
+          <ul class="nav_tabl_for_modal_window">
+            <li class="cellfornavone">
+              <a href="./index.html" class="navone_for_modal_window">
+                Studio
+              </a>
+            </li>
+
+            <li>
+              <a href="" class="nav_for_modal_window"> Portfolio </a>
+            </li>
+            <li>
+              <a href="" class="nav_for_modal_window"> Contacts </a>
+            </li>
+          </ul>
+        </nav>
+        <address class="address_for_modal_window">
+          <ul class="addresstabl">
+            <li class="telli">
+              <a href="tel:+110001111111" class="email_for_modal_window">
+                +11 (000) 111-11-11
+              </a>
+            </li>
+            <li class="emailli">
+              <a href="mailto:info@devstudio.com" class="tel_for_modal_window">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+        </address>
+        <ul class="footericons_for_modal_window">
+          <li class="fotterli">
+            <a href="" class="footermesedjerlink">
+              <svg class="iconmesedgers" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="fotterli">
+            <a href="" class="footermesedjerlink">
+              <svg class="iconmesedgers" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="fotterli">
+            <a href="" class="footermesedjerlink">
+              <svg class="iconmesedgers" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="fotterli">
+            <a href="" class="footermesedjerlink">
+              <svg class="iconmesedgers" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    -->
+  </body>
 </html>
