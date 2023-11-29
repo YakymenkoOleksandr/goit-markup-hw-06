@@ -1204,7 +1204,7 @@ img {
     }
 
     @media (min-resolution: 192dpi) {
-        .box {
+        .sectionone {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/images_for_mobile/backgrounf@2x.jpg');
         }
     }
@@ -1566,7 +1566,7 @@ img {
             }
         
             @media (min-resolution: 192dpi) {
-                .box {
+                .sectionone {
                     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/images_for_tablet/backgrounf@2x.jpg');
                 }
             }
