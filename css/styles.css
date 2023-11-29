@@ -634,7 +634,9 @@ img {
 }
 
 .ourteamtextfooter { /*72*/
-    margin-right: 80px;
+    margin-right: 56px;
+    margin-left: 24px;
+    margin-bottom: 72px;
 }
 
 /* Поле вводу і кнопка у футері*/
@@ -1019,9 +1021,13 @@ img {
 
 /*Стилі для мобільної версії*/
 
+@media (max-width: 767px) {
 
-
-@media (max-width: 768px) {
+    .headerblock {
+        padding-top: 17.5px;
+        padding-bottom: 17.5px;
+        padding-left: 16px;
+    }
 
     .container {
         width: 320px;
@@ -1160,11 +1166,7 @@ img {
 
     /**/
 
-    .logoheader {
-        margin-left: 16px;
-        margin-top: 17.5px;
-        margin-bottom: 17.5px;
-    }
+
 
     /*Імейл та телефон*/
 
@@ -1201,6 +1203,8 @@ img {
     .sectionone {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/images_for_mobile/backgroundx1.jpg');
         background-size: cover;
+        padding-top: 72px;
+        padding-bottom: 72px;
     }
 
     @media (min-resolution: 192dpi) {
@@ -1357,6 +1361,7 @@ img {
         background: var(--WHITE, #FFF);
         box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
         column-gap: 32px;
+        
     }
 
     /* Footer */
@@ -1373,14 +1378,12 @@ img {
         line-height: 24px;
         letter-spacing: 0.32px;
         text-align: justify;
-        margin-bottom: 72px;
     }
 
     .logofooter {
         font-style: normal;
         line-height: 21px;
         letter-spacing: 0.54px;
-        margin-bottom: 17.5px;
     }
 
     .logofooter .studio {
@@ -1400,7 +1403,7 @@ img {
         align-items: center;
         justify-content: center;
         margin: 0 auto;
-        margin-bottom: 17.5px;
+        margin-bottom: 72px;
     }
 
     .footer .container {
@@ -1411,7 +1414,7 @@ img {
     }
 
     .footericons {
-        gap: 40px;
+        gap: 16px;
         margin-bottom: 80px;
     }
 
@@ -1430,10 +1433,10 @@ img {
         align-items: center;
         justify-content: center;
         width: 100%;
+        gap: 16px;
     }
 
     .label_for_e-mail {
-        margin-bottom: 16px;
         border-radius: 4px;
         border: 1px solid var(--WHITE, #FFF);
         opacity: 0.3;
@@ -1470,6 +1473,9 @@ img {
     background-color: white;
 }
 
+.subscribe {
+    text-align: center;
+}
 
 }
 
@@ -1477,7 +1483,7 @@ img {
 
 /*Стилі для планшета*/
 
-@media (min-width: 768px) and (max-width: 1158px) {
+@media (min-width: 768px) and (max-width: 1157px) {
 
     .container {
         width: 769px;
@@ -1552,13 +1558,18 @@ img {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        gap: 12px;
+        margin: 0;
     }
 
     /*Секція 1*/
 
     .sectionone {
-        min-width: 769px;
         max-width: 1158px;
+        padding-top: 112px;
+        padding-bottom: 112px;
+        padding-left: auto;
+        padding-right: auto;
 
         .sectionone {
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/images_for_tablet/backgroundx1.jpg');
@@ -1585,6 +1596,7 @@ img {
     /*Секція 2. Статті*/
     .sectiontwo {
         padding: 96px 0;
+        padding-bottom: 48px;
     }
 
     .sectiontwoul {
@@ -1594,6 +1606,7 @@ img {
 
     .sectiontwoli {
         flex-basis: calc((100% - 24px) / 2);
+        padding-bottom: 48px;
     }
 
     .sectiontwoh {
@@ -1640,11 +1653,13 @@ img {
     .frame {
         width: 100%;
         flex-basis: calc((100% - 24px) / 2);
+        margin-bottom: 40px;
     }
 
     .sectionthree {
         padding: 96px 0;
         min-width: 320px;
+        padding-bottom: 56px;
     }
 
     .ourteam {
@@ -1723,6 +1738,7 @@ img {
         box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
         column-gap: 32px;
         flex-basis: calc((100% - 24px) / 2);
+        margin-bottom: 48px;
     }
 
     /* Footer */
@@ -1739,14 +1755,13 @@ img {
         line-height: 24px;
         letter-spacing: 0.32px;
         text-align: justify;
-        margin-bottom: 72px;
+        margin-bottom: 0;
     }
 
     .logofooter {
         font-style: normal;
         line-height: 21px;
         letter-spacing: 0.54px;
-        margin-bottom: 17.5px;
     }
 
     .logofooter .studio {
@@ -1765,13 +1780,13 @@ img {
         flex-direction: column;
         align-items: start;
         margin-bottom: 17.5px;
-        margin-right: 0px;
+        margin-right: 0;
     }
 
     .footer .container {
+        flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
-        margin-right: 0;
+        width: 584px;
     }
 
     /* Поле вводу і кнопка у футері*/
@@ -1807,4 +1822,9 @@ img {
 
         /*  */
 
+    .sectionfour {
+    /*48*/
+    padding-top: 96px;
+    padding-bottom: 48px;
+    }
 }
